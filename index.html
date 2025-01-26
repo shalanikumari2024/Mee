@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix</title>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #141414;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e50914;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav ul li {
+  margin-left: 20px;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #e50914;
+}
+
+.nav ul li .btn {
+  background: #e50914;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+.nav ul li .btn:hover {
+  background: #f40612;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+  color: #fff;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content .btn-large {
+  padding: 15px 30px;
+  background: #e50914;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hero-content .btn-large:hover {
+  background: #f40612;
+  transform: scale(1.05);
+}
+
+.features {
+  padding: 50px 20px;
+  background-color: #181818;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: #202020;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature img {
+  max-width: 100%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.feature h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+a{
+  text-decoration: none;
+}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Netflix</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">My List</a></li>
+        <li><a href="#" class="btn">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows, and more.</h1>
+      <p>Watch anywhere. Cancel anytime.</p>
+      <a href="#" class="btn-large">Get Started</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Why Netflix?</h2>
+    <div class="feature-container">
+      <div class="feature">
+        <img src="download (51).jpg" alt="Feature 1">
+        <h3><a href="https://www.youtube.com/watch?v=qaKwKys8v-A">Watch Anywhere</h3></a>
+        <p>Stream on any device, anytime, anywhere.</p>
+      </div>
+      <div class="feature">
+        <img src="download (52).jpg" alt="Feature 2">
+        <h3><a href="https://www.youtube.com/watch?v=t9o2Q869MGY">Exclusive Content</h3></a>
+        <p>Enjoy exclusive shows and movies only on Netflix.</p>
+      </div>
+      <div class="feature">
+        <img src="download (53).jpg" alt="Feature 3">
+        <h3><a href="https://www.youtube.com/watch?v=0-hVoNCRuqc">Offline Downloads</h3></a>
+        <p>Download your favorites to watch offline.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Netflix. All rights reserved.</p>
+  </footer>
+</body>
+</html>
